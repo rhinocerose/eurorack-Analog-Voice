@@ -33036,13 +33036,8 @@ I have personally settled on 68k for R25</text>
 <segment>
 <wire x1="-58.42" y1="81.28" x2="-58.42" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="83.82" x2="-50.8" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="83.82" x2="-50.8" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="78.74" x2="-43.18" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="83.82" x2="-43.18" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="81.28" x2="-66.04" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="83.82" x2="-58.42" y2="83.82" width="0.1524" layer="91"/>
-<junction x="-50.8" y="83.82"/>
-<junction x="-43.18" y="83.82"/>
 <junction x="-58.42" y="83.82"/>
 <junction x="-66.04" y="83.82"/>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -33052,7 +33047,6 @@ I have personally settled on 68k for R25</text>
 <wire x1="-73.66" y1="83.82" x2="-81.28" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="83.82" x2="-50.8" y2="88.9" width="0.1524" layer="91"/>
 <label x="-50.8" y="88.9" size="1.778" layer="95"/>
-<wire x1="-38.1" y1="83.82" x2="-38.1" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="C13" gate="G$1" pin="+"/>
 <wire x1="-73.66" y1="83.82" x2="-73.66" y2="81.28" width="0.1524" layer="91"/>
@@ -33070,13 +33064,8 @@ I have personally settled on 68k for R25</text>
 <segment>
 <wire x1="-58.42" y1="60.96" x2="-58.42" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="58.42" x2="-50.8" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="58.42" x2="-43.18" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="63.5" x2="-43.18" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="58.42" x2="-38.1" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="60.96" x2="-66.04" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="58.42" x2="-58.42" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-50.8" y="58.42"/>
-<junction x="-43.18" y="58.42"/>
 <junction x="-58.42" y="58.42"/>
 <junction x="-66.04" y="58.42"/>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -33086,7 +33075,6 @@ I have personally settled on 68k for R25</text>
 <wire x1="-73.66" y1="58.42" x2="-66.04" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="58.42" x2="-50.8" y2="50.8" width="0.1524" layer="91"/>
 <label x="-50.8" y="50.8" size="1.778" layer="95"/>
-<wire x1="-38.1" y1="63.5" x2="-38.1" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="C14" gate="G$1" pin="-"/>
 <wire x1="-73.66" y1="60.96" x2="-73.66" y2="58.42" width="0.1524" layer="91"/>
@@ -33236,6 +33224,8 @@ I have personally settled on 68k for R25</text>
 <attribute name="NAME" x="68.58" y="120.015" size="1.778" layer="95"/>
 <attribute name="VALUE" x="68.58" y="111.76" size="1.778" layer="96"/>
 </instance>
+<instance part="IC1" gate="P" x="162.56" y="119.38" smashed="yes"/>
+<instance part="IC4" gate="P" x="172.72" y="119.38" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -33462,15 +33452,42 @@ I have personally settled on 68k for R25</text>
 <segment>
 <pinref part="IC1" gate="C" pin="OUT"/>
 <wire x1="73.66" y1="116.84" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="C" pin="-IN"/>
 <wire x1="81.28" y1="116.84" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="114.3" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="109.22" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
 <junction x="81.28" y="116.84"/>
 <label x="91.44" y="119.38" size="1.778" layer="95"/>
+<pinref part="IC1" gate="C" pin="-IN"/>
+<wire x1="58.42" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="114.3" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="12V" class="1">
+<segment>
+<pinref part="IC1" gate="P" pin="V+"/>
+<wire x1="162.56" y1="127" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="132.08" x2="172.72" y2="127" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="P" pin="V+"/>
+<wire x1="167.64" y1="132.08" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
+<junction x="167.64" y="132.08"/>
+<label x="172.72" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="-12V" class="1">
+<segment>
+<pinref part="IC1" gate="P" pin="V-"/>
+<wire x1="162.56" y1="111.76" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="104.14" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="P" pin="V-"/>
+<wire x1="172.72" y1="111.76" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
+<junction x="172.72" y="111.76"/>
+<wire x1="167.64" y1="104.14" x2="167.64" y2="99.06" width="0.1524" layer="91"/>
+<junction x="167.64" y="104.14"/>
+<label x="170.18" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
