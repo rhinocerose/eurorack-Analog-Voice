@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -32430,7 +32430,7 @@ I have personally settled on 68k for R25</text>
 <text x="-31.496" y="-29.718" size="1.778" layer="91">See note in resonance section on possible values for R25</text>
 <text x="-146.05" y="-68.072" size="1.778" layer="91">Based on :
 
-https://github.com/acobley/Analog-Voice
+https://github.com/forestcaver/Analog-Voice/tree/master/AJH_as3320_LPF
 
 By  Forest Caver
 
