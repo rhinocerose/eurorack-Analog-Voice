@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -32419,7 +32419,7 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="-138.176" y="26.162" size="1.778" layer="91"> With +5V then R25 should be 50k ish to get
+<text x="-92.964" y="-69.088" size="1.778" layer="91"> With +5V then R25 should be 50k ish to get
 100uA at full res ctrl
 
 With these values, it self-oscillates at about
@@ -32428,9 +32428,9 @@ less resonance then increase the resistor.
 
 I have personally settled on 68k for R25</text>
 <text x="-31.496" y="-29.718" size="1.778" layer="91">See note in resonance section on possible values for R25</text>
-<text x="-129.794" y="-18.542" size="1.778" layer="91">Based on :
+<text x="-146.05" y="-68.072" size="1.778" layer="91">Based on :
 
-https://github.com/acobley/Analog-Voice
+https://github.com/forestcaver/Analog-Voice/tree/master/AJH_as3320_LPF
 
 By  Forest Caver
 
@@ -32516,12 +32516,12 @@ CC-BY-NC-SA 4.0</text>
 <instance part="GND17" gate="1" x="-23.876" y="16.002" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-21.336" y="13.462" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R4" gate="G$1" x="-148.336" y="5.842" smashed="yes">
-<attribute name="NAME" x="-153.416" y="3.302" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-150.876" y="3.302" size="1.778" layer="96" rot="R90"/>
+<instance part="R4" gate="G$1" x="-125.73" y="-5.842" smashed="yes">
+<attribute name="NAME" x="-130.81" y="-8.382" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-128.27" y="-8.382" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND3" gate="1" x="-148.336" y="-9.398" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-145.796" y="-11.938" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND3" gate="1" x="-125.73" y="-21.082" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-123.19" y="-23.622" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="C15" gate="G$1" x="-37.338" y="-38.338" smashed="yes" rot="R180">
 <attribute name="NAME" x="-37.338" y="-39.1" size="0.762" layer="95" ratio="10" rot="R180" align="bottom-center"/>
@@ -32554,7 +32554,7 @@ CC-BY-NC-SA 4.0</text>
 <segment>
 <pinref part="R4" gate="G$1" pin="A"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="-148.336" y1="-1.778" x2="-148.336" y2="-6.858" width="0.1524" layer="91"/>
+<wire x1="-125.73" y1="-13.462" x2="-125.73" y2="-18.542" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12V" class="1">
@@ -32567,8 +32567,8 @@ CC-BY-NC-SA 4.0</text>
 <net name="5V" class="1">
 <segment>
 <pinref part="R4" gate="G$1" pin="E"/>
-<wire x1="-148.336" y1="13.462" x2="-148.336" y2="26.162" width="0.1524" layer="91"/>
-<label x="-148.336" y="26.162" size="1.778" layer="95"/>
+<wire x1="-125.73" y1="1.778" x2="-125.73" y2="14.478" width="0.1524" layer="91"/>
+<label x="-125.73" y="14.478" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="-12V" class="1">
@@ -32619,8 +32619,8 @@ CC-BY-NC-SA 4.0</text>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="S"/>
-<wire x1="-143.256" y1="5.842" x2="-138.176" y2="5.842" width="0.1524" layer="91"/>
-<label x="-138.176" y="5.842" size="1.778" layer="95"/>
+<wire x1="-120.65" y1="-5.842" x2="-115.57" y2="-5.842" width="0.1524" layer="91"/>
+<label x="-115.57" y="-5.842" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$54" class="2">
